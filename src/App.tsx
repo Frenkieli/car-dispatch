@@ -103,7 +103,7 @@ function App() {
 
   // 初始化音效
   useEffect(() => {
-    audioRef.current = new Audio("/alert.mp3");
+    audioRef.current = new Audio(process.env.PUBLIC_URL + "/alert.mp3");
     audioRef.current.loop = true; // 設定為循環播放
   }, []);
 
